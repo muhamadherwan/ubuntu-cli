@@ -1,6 +1,6 @@
 # UBUNTU CLI
 
-Package Manager
+* Package Manager
 - sudo apt-get update
 	- get current update able packages
 - sudo apt-get upgrade
@@ -12,12 +12,18 @@ Package Manager
 - sudo apt-get update
 	- get lsit of package need to update
 
-Create SSH key
+* Create SSH key
 - ssh-keygen -t rsa
 
-SSH
+* Add SSH key to a server acc so can just connnect with no password
+- ssh-copy-id root@theserver ip
+
+
+* SSH to server
 - ssh user@192.168.1.1 -p 26
-System:
+ 
+
+* System:
 - uname -a
 	- System info
 - blkid
@@ -29,7 +35,7 @@ System:
 - sudo shutdown -h now
 	- shutdown system now
 
-Network:
+* Network:
 - ifconfig
 	- display network info
 - iwconfig
@@ -37,7 +43,7 @@ Network:
 - ping
 	- ping a server
 
-Directory :
+* Directory :
 - pwd
 	- show current dir path
 - ls
@@ -65,7 +71,7 @@ Directory :
 - rm -R
 	- delete dir and all its content
 
-Files:
+* Files:
 - touch filename
 	- create the filename
 - nano filename:
@@ -94,7 +100,7 @@ Files:
 	- append result to a new files
 	- exp: ls >> files2[w 
 
-Search and comparing files:
+* Search and comparing files:
 - grep
 	- search word in files
 	- exp: grep magneto File1
@@ -118,7 +124,7 @@ Search and comparing files:
 - history
 	- show cli history
 
-File permission
+* File permission
 - type:
 	- u - user
 	- g - group
@@ -142,11 +148,11 @@ File permission
 					- set group have read and execute permission on filename
 					- set user have only executed permission on filename
 
-Verify download file using checksum
+* Verify download file using checksum
 - sha1sum filename | gep the key number
 - if return red key number and the the filename that means the download files is valid and safe.   
 
-Compress and Decompress files
+* Compress and Decompress files
 - gzip
 	- compress file to zip format
 	- exp: gzip filename
@@ -162,7 +168,7 @@ Compress and Decompress files
 	- exp:
 		- tar xvf tarfilename.tar
 
-User and Group
+* User and Group
 - sudo useradd magneto
 	- create new user call magneto
 - sudo  passwd magneto
@@ -173,8 +179,9 @@ User and Group
 	- add magneto to xmen usergroup
 - sudo userdel magneto
 	- delete user magneto
-Setup Github
-Reff: https://www.youtube.com/watch?v=ZMgLZUYd8Cw
+
+* Setup Github
+- Reff: https://www.youtube.com/watch?v=ZMgLZUYd8Cw
 - install:
 	- sudo apt-get install git -y
 - verified version:
